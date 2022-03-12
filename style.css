@@ -1,0 +1,41 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root,
+input,
+button {
+    font-size: 21px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.main-container {
+    background-color: peachpuff;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+fieldset {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 420px;
+    height: 400px;
+}
+
+fieldset *:not(legend) {
+    width: 400px;
+    height: 42px;
+    padding-bottom: 10px;
+}
